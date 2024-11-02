@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .employee-photo {
+            width: 100px;
+            height: 100px;
+            background-color: #f2f2f2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .info div {
+            margin-bottom: 10px;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tabs button {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+        .tabs button.active {
+            background-color: #fff;
+            font-weight: bold;
+        }
+        .tab-content {
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .actions button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .actions button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="employee-photo">
+        <img src="https://via.placeholder.com/100" alt="Employee Photo">
+    </div>
+    <h1>Employee's Name</h1>
+    <h3>Job Position</h3>
+
+    <div class="info">
+        <div>
+            <strong>Work Mobile:</strong><br>
+            <span>Not provided</span>
+        </div>
+        <div>
+            <strong>Department:</strong><br>
+            <span>Not provided</span>
+        </div>
+        <div>
+            <strong>Work Phone:</strong><br>
+            <span>Not provided</span>
+        </div>
+        <div>
+            <strong>Job Position:</strong><br>
+            <span>Not provided</span>
+        </div>
+        <div>
+            <strong>Work Email:</strong><br>
+            <span>Not provided</span>
+        </div>
+        <div>
+            <strong>Manager:</strong><br>
+            <span>Not provided</span>
+        </div>
+        <div>
+            <strong>Coach:</strong><br>
+            <span>Not provided</span>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <button class="active">Resume</button>
+        <button>Work Information</button>
+        <button>Private Information</button>
+        <button>HR Settings</button>
+    </div>
+
+    <div class="tab-content">
+        <div class="actions">
+            <div>
+                <h4>Resume</h4>
+                <button>Create a new entry</button>
+            </div>
+            <div>
+                <h4>Skills</h4>
+                <button>Create a new entry</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <script>
+       //isarray() method - to check whether it is array or not
+       var x = ["a","b","c","d","a","b","c","d"];
+       var a = "ram";
+       document.write(a + "<br><br>");
+       var b = Array.isArray(a);
+       document.write(b + "<br><br>");
+       document.write(Array.isArray(x)+ "<br><br>");
+
+       if(Array.isArray(a))
+       {
+        document.write("This is an ARRAY");
+       }
+       else{
+        document.write("This is not  an ARRAY" + "<br><br>");
+       }
+       //    var x = ["a","b","c","d","a","b","c","d"];
+       //indexof() method  -- to find the index of an array
+       document.write("index of :" + x.indexOf("b",2) + "<br><br>");
+       document.write("index of :" + x.indexOf("d",5) + "<br><br>");
+       document.write("index of :" + x.indexOf("f",2)+ "<br><br>");
+
+        //lastIndexof() method  -- to find the index of an array
+        document.write("index of :" + x.lastIndexOf("b") + "<br><br>");
+        document.write("index of :" + x.lastIndexOf("d") + "<br><br>");
+        document.write("index of :" + x.lastIndexOf("b")+ "<br><br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
