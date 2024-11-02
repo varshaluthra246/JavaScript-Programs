@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+    <script>
+        var a = {
+            //properties
+            fname : "varsha",
+            lname : "luthra",
+            age : 20,
+            email : 'varshaluthra22@gmail.com',
+            favcolor: ['blue','black','red'],
+
+            //object inside object
+
+            living: {
+                'city' : 'sonipat',
+                'country' : 'India'
+            },
+            //methods 
+            salary : function(){
+                return 25000;
+               //document.write(25000);
+            }, 
+            fullname : function(){
+                return this.fname + " " + this.lname;       //refers to current object
+            }
+        }
+
+       // document.write(a);
+        //document.write(a.fname);
+        //document.write(a.favcolor[2]);
+        //a.salary();
+       // document.write(a.salary());
+        //document.write(a.fullname());
+        //document.write(a.living.city);
+        console.log(a);         //check console
+        console.log(a.fname); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

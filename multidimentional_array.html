@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimentional Array</title>
+    <script>
+        var ary = [["varsha", 20, "female","BCA"], 
+        ["sham", 21, "male","B.Com"],
+        ["ram", 22, "male","MCA"],
+        ["geeta", 23, "female","Bsc."]];
+
+        document.write(ary + "<br>");
+        document.write(ary[0][2] + "<br>");
+        document.write(ary[2][3]+ "<br>");
+
+        for(var a = 0;a<4;a++)
+        {
+            for(var b=0;b<4;b++)
+            {
+                document.write(ary[a][b]+" ");
+            }
+            document.write("<br>");
+        }
+
+        document.write("Using HTML Tags<br>");
+        document.write("<table border='1px' cellspacing='0'>");
+        for(var a = 0;a<ary.length;a++)  
+        {
+            document.write("<tr>");
+            for(var b=0;b<ary[a].length;b++)
+            {
+                document.write("<td>" + ary[a][b]+ "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
