@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+    <script>
+      //length() -- to calculate the no. of characters in a string
+      var str = "My name is is is Varsha Luthra";   //including spaces
+      var a = str.length;
+      document.write(a + "<br>");
+      var b = str.toLowerCase();
+      document.write(b + "<br>");
+      var c = str.toUpperCase();
+      document.write(c + "<br>");
+      var d = str.includes('Varsha');   //JS is case-sensitive
+      document.write(d + "<br>");
+      var e = str.startsWith('My');
+      document.write(e + "<br>");
+      var f = str.endsWith('a');
+      document.write(f + "<br>");
+      var g = str.search('Luthra');    //if not found or wrong so return -1
+      document.write(g + "<br>");
+      var h = str.match(/is/g);
+      document.write(h + "<br>");
+      var i = str.indexOf("is");
+      document.write(i + "<br>");
+      var j = str.lastIndexOf("is");
+      document.write(j + "<br>");
+      var k = str.replace("Varsha Luthra", "Suman");
+      document.write(k + "<br>");
+      var l = str.replace(/is/g, "are");
+      document.write(l + "<br>");
+      var m = str.charAt(3);
+      document.write(m + "<br>");
+      var n = "Hello people";
+      var o = str.concat(" " +n);
+      document.write(o + "<br>");
+      var p = str.split(" ");
+      document.write(p + "<br>");
+      var q = str.repeat(5);
+      document.write(q + "<br>");
+      var r = str.slice(9, 20);
+      document.write(r + "<br>");
+      /*var s = str.substr(10, 20);
+      document.write(s + "<br>");*/
+      var t = 50;
+      var u = t.toString();
+      document.write(u + 30 + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
