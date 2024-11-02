@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <script>
+        //sorting the array values
+        var a = ["sanjay", "aman", "rehman", "karan","varsha"];
+        var array1 = ["sanjay", "aman", "rehman", "karan","varsha"];
+        document.write(a + "<br><br>");
+        var b=a.sort();
+        document.write("1. sorted elements of array: " + b + "<br><br>");
+
+        //reverse method
+        var c=a.reverse();
+        document.write("2. reversed elements of array: " +c + "<br><br>");
+
+        //pop method --> to delete the last element
+        d=a.pop();
+        document.write("3. popped element from array: " +d + "<br><br>");
+        document.write("3. popped element from array: " +a + "<br><br>")
+
+        //push method --> always add at the last
+        document.write("4. pushed element in array: " +array1 + "<br><br>");
+        array1.push("Rahul");
+        array1.push("kashsih");
+        document.write("4. pushed element in array: " +array1 + "<br><br>");
+
+        //shift method -->shift() removes an element at a specified position and shifts the remaining elements up
+        a.shift();
+        document.write("5. shifted element from array: " +a + "<br><br>");
+
+        //unshift method --> unshift() adds a new element at a particular position and shifts the remaining elements down the list.
+        a.unshift("abc");
+        document.write("6. unshifted element from array: " +a + "<br><br>");
+
+        //concat method --> to join 2 arrays
+        var b = a.concat("kavita", "jaspreet");
+        document.write("7. concatenation in  array: " +b + "<br><br>");
+        var d = ["a","b"];
+        var c = a.concat(b, d);
+        document.write("8." + c + "<br><br>");
+
+         //join method --> to make a single string
+         var b = a.concat("kavita", "jaspreet");
+         var c = a.concat(b);
+         var d =  c.join(" + ");
+         document.write("9." + d + "<br><br>");
+
+         //slice method --> to display a particular part
+         var varsha = ["a","b","c","d","e"];
+         document.write(varsha + "<br><br>");
+         var x = varsha.slice(3,5);
+         var  y= varsha.slice(0);
+         var z = varsha.slice(-5, -2);
+         document.write("10.1. slice method :  " + x + "<br><br>");
+         document.write("10.2. slice method :  " + y + "<br><br>");
+         document.write("10.3. slice method :  " + z + "<br><br>");
+
+         //splice method --> to insert or delete an element from a particular index
+        
+         const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        // At position 2, add 2 elements: 
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+    document.write("11.1. splice method : " + fruits + "<br><br>");
+
+        // At position 2, remove 2 items: 
+        fruits.splice(2, 2);
+        document.write("11.2. splice method : " + fruits + "<br><br>");
+
+        // At position 2, add 2 elements, remove 1: 
+        fruits.splice(2, 1, "Lemon", "Kiwi");
+        document.write("11.3. splice method : " + fruits + "<br><br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

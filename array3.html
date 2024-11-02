@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array2</title>
+    <script>
+        var ary= new Array(3);
+        ary[7] = "abc";
+        ary[4] = "def";
+
+        for(var g = 0; g<3; g++){
+            ary[g] = prompt("enter the value in an array:");
+        }
+
+        document.write("<ul>");
+            for(var a = 0; a<8; a++)
+            {
+                document.write("<li>" + ary[a] + "</li>");
+            }
+            document.write("</ul>");
+    </script>
+</head>
+<body>
+    <h4>Another way to create an Array</h4>
+</body>
+</html>
