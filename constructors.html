@@ -1,0 +1,21 @@
+<html>
+<head>
+<h1>Constructors</h1>
+<script type="text/javascript">
+<!--
+var func = new Function("x", "y", "return x*y;");
+function secondFunction(){
+ var result;
+ result = func(60,70);
+document.write ("the multiplication of numbers are=",result );
+}
+//-->
+</script>
+</head> 
+<body> 
+<p>Click the following button to call the function</p>
+<form> 
+<input type="button" onclick="secondFunction()" value="Call Function"> 
+</form>
+</body>
+</html>
